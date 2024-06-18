@@ -12,3 +12,4 @@ C:\Users\JessaDelo-Ag\Source\Repos\zapper\Assessment\obj\Debug\net8.0\refint\Ass
 C:\Users\JessaDelo-Ag\Source\Repos\zapper\Assessment\obj\Debug\net8.0\Assessment.pdb
 C:\Users\JessaDelo-Ag\Source\Repos\zapper\Assessment\obj\Debug\net8.0\Assessment.genruntimeconfig.cache
 C:\Users\JessaDelo-Ag\Source\Repos\zapper\Assessment\obj\Debug\net8.0\ref\Assessment.dll
+C:\Users\JessaDelo-Ag\Source\Repos\zapper\Assessment\obj\Debug\net8.0\Assessment.sourcelink.json

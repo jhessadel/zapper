@@ -7,16 +7,19 @@ namespace BooleanOutputApp
     {
         static void Main(string[] args)
         {
+            ////Question 1 - Database Design///
+            ////DatabaseDesign.sql file Entity folder///
 
+            ////Question 2.1 Checking if a feature is enable////
             Console.WriteLine(IsFeatureEnabled("00000000", 7));
             Console.WriteLine(IsFeatureEnabled("00000010", 7));
             Console.WriteLine(IsFeatureEnabled("11111111", 4));
             Console.Read();
 
+            ///Question 2.2 Storing user setting////
             ////write settings to file////
             WriteSettingsToFile("11111111");
             Console.Read();
-
             ////read settings from file////
             Console.WriteLine(ReadSettings("./settings.txt"));
             Console.Read();
@@ -35,6 +38,8 @@ namespace BooleanOutputApp
             return settingsArray[index] == "1";
         }
 
+
+        ////write settings to file////
         public static void WriteSettingsToFile(string settings)
         {
 
@@ -60,10 +65,20 @@ namespace BooleanOutputApp
             }
         }
 
+        ////read settings////
         public static string ReadSettings(string filepath)
         {
-            string settings = File.ReadAllText(filepath);
-            return settings;
+            try
+            {
+                string settings = File.ReadAllText(filepath);
+                return settings;
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Cannot read settings.txt");
+                Console.WriteLine(ex.Message);
+                return ex.Message;
+            }
         }
     }
 }
